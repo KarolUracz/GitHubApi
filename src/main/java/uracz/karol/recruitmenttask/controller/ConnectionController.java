@@ -30,10 +30,9 @@ public class ConnectionController {
                     .build();
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
             Map<String, Object> result = new ObjectMapper().readValue(response.body(), HashMap.class);
-            Map<String, Object> collectedData = new HashMap<>();
-            collectedData = result.entrySet().stream()
+            Map<String, Object> collectedData = result.entrySet().stream()
                     .filter(x -> x.getKey().equals("full_name") || x.getKey().equals("clone_url") || x.getKey().equals("stargazers_count")
-                    || x.getKey().equals("created_at") || x.getKey().equals("description"))
+                            || x.getKey().equals("created_at") || x.getKey().equals("description"))
                     .collect(Collectors.toMap(x -> x.getKey(), x -> Optional.ofNullable(x.getValue()).orElse("")));
             return collectedData.toString();
         } catch (InterruptedException e) {
