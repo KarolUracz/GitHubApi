@@ -28,7 +28,8 @@ public class ConnectionController {
 
     @GetMapping("/repositories/{owner}/{repository-name}")
     public String getDataFromUrl(@PathVariable String owner, @PathVariable("repository-name") String repositoryName) {
-        Map<String, Object> dataFromGitHubApi = gitHubApiService.getDataFromGitHubApi(owner, repositoryName);
-        return dataFromGitHubApi.toString();
+        HttpResponse<String> dataFromGitHubApi = gitHubApiService.getDataFromGitHubApi(owner, repositoryName);
+        Map<String, Object> detailsDataFromUrl = gitHubApiService.getDetailsDataFromUrl(dataFromGitHubApi);
+        return detailsDataFromUrl.toString(); // You can prepare String response using data from map
     }
 }
