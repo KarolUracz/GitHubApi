@@ -45,8 +45,4 @@ class ConnectionControllerTest {
         Assert.assertTrue(servletContext instanceof MockServletContext);
         Assert.assertNotNull(wac.getBean("connectionController"));
     }
-
-    @Test
-    void shouldReturn() {
-    }
 }
