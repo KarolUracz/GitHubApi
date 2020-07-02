@@ -18,6 +18,6 @@ public class ConnectionController {
     @GetMapping("/repositories/{owner}/{repository-name}")
     public Object getDataFromUrl(@PathVariable String owner, @PathVariable("repository-name") String repositoryName) {
         String dataFromGitHubApi = gitHubApiService.getDataFromGitHubApi(owner, repositoryName);
-        return /*gitHubApiService.getDetailsDataFromUrl(dataFromGitHubApi);*/ dataFromGitHubApi;
+        return gitHubApiService.getDetailsDataFromUrl(dataFromGitHubApi); /*dataFromGitHubApi*/
     }
 }
