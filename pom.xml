@@ -13,7 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>recruitment-task</name>
-    <description>recruitment task for JCommerce</description>
+    <description>GitHub Rest Api</description>
 
     <properties>
         <java.version>14</java.version>
