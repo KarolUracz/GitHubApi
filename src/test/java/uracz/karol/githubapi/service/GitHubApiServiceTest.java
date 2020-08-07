@@ -1,4 +1,4 @@
-package uracz.karol.recruitmenttask.service;
+package uracz.karol.githubapi.service;
 
 import org.junit.jupiter.api.Test;
 

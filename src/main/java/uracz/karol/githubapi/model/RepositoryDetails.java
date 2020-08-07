@@ -1,14 +1,14 @@
-package uracz.karol.recruitmenttask.model;
+package uracz.karol.githubapi.model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class RepositoryDetails {
     @SerializedName("full_name")
     private String fullName;
