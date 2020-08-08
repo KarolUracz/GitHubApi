@@ -1,13 +1,13 @@
-package uracz.karol.recruitmenttask;
+package uracz.karol.githubapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RecruitmentTaskApplication {
+public class GitHubApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RecruitmentTaskApplication.class, args);
+        SpringApplication.run(GitHubApiApplication.class, args);
     }
 
 }

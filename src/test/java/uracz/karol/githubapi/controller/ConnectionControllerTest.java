@@ -1,4 +1,4 @@
-package uracz.karol.recruitmenttask.controller;
+package uracz.karol.githubapi.controller;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,11 +11,8 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.mock.web.MockServletContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-import uracz.karol.recruitmenttask.service.GitHubApiService;
 
 import javax.servlet.ServletContext;
 

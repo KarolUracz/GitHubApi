@@ -1,4 +1,4 @@
-package uracz.karol.recruitmenttask.controller;
+package uracz.karol.githubapi.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
